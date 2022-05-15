@@ -10,6 +10,15 @@ Run the live image from a bootable USB select a installation source and create a
 
 and the following sub-options
 > - Standard
-> - Sound and Video
-> - Window Managers
 > - (if on a vitrtual machine) Guest Additions
+
+## Running The Script
+Boot up Fedora Server and run the following commands
+
+> sudo dnf install git
+> git clone https://github.com/Steelstone3/Skippy-Fedora-36.git
+> cd Skippy-Fedora-36
+> bash skippy_fedora_36.sh
+
+The script will then start to setup "Skippy Fedora"
+
