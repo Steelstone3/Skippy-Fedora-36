@@ -1,11 +1,3 @@
-cd
-echo "Configuring DNF"
-echo "max_parallel_downloads=10" >> /etc/dnf/dnf.conf
-echo "fastestmirror=True" >> etc/dnf/dnf.conf
-
-echo "Updating system"
-sudo dnf update
-
 echo "Installing log in manager"
 sudo dnf install gdm
 sudo dnf remove gnome-desktop3 gnome-desktop4
