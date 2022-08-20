@@ -1,5 +1,6 @@
 echo "Install system sofware"
 sudo dnf install gdm git vim htop pipewire
+#sudo dnf group install "Multimedia" "Standard"
 
 echo "Setup repositories"
 sudo dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.com/x86_64/
