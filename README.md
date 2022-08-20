@@ -45,6 +45,8 @@ Typically run the following:
 > sudo dnf system-upgrade reboot
 
 ## Running The Script For Skippy Gnome Fedora 36
+Prior to running the script please feel free to comment out (#) the Microsoft repository being imported under setup repositories and change/ comment out (#) to personal preference for "Install user specific applications" and "Install developer tools" sections
+
 Boot up Fedora Server and run the following commands
 
 > sudo dnf install git
