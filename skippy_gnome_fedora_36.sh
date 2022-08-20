@@ -7,8 +7,7 @@ sudo echo "deltarpm=1" >> /etc/dnf/dnf.conf
 echo "Update system"
 sudo dnf upgrade --refresh
 sudo dnf autoremove
-sudo dnf install dnf-plugins-core
-sudo dnf install dnf-plugin-system-upgrade
+sudo dnf install dnf-plugins-core dnf-plugin-system-upgrade
 sudo dnf system-upgrade download --releasever=36
 
 echo "Install system sofware"
