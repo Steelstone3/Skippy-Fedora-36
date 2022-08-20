@@ -11,7 +11,7 @@ sudo dnf install dnf-plugins-core dnf-plugin-system-upgrade
 sudo dnf system-upgrade download --releasever=36
 
 echo "Install system sofware"
-sudo dnf install gdm dnf-plugins-core git vim gnome-terminal htop
+sudo dnf install gdm git vim htop pipewire
 
 echo "Setup repositories"
 sudo dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.com/x86_64/
@@ -21,9 +21,11 @@ echo "Install graphical enviroment"
 sudo dnf install @base-x gnome-shell
 
 echo "Install applications"
-sudo dnf install brave-browser gnome-calculator nautilus geary
+sudo dnf install gnome-software gnome-terminal nautilus brave-browser gnome-calculator geary gnome-calendar rhythmbox
 
 echo "Enable services"
-sudo systemctl enable gdm.service
-sudo systemctl set-defaul graphical.target
+sudo systemctl enable gdm.service NetworkManager
+sudo systemctl set-default graphical.target
+touch ~/.xinitrc
 echo "exec /usr/bin/gnome-session" >> ~/.xinitrc
+echo "WaylandEnable=true" >> /etc/gdm/custom.conf # Under [daemon]
