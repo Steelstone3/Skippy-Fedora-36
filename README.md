@@ -80,7 +80,9 @@ Create a file called .xinitrc in the home folder
 
 Then add the following line to run the graphical shell
 
-> exec /usr/bin/gnome-session ~/.xinitrc
+> nano ~/.xinitrc
+>
+> exec /usr/bin/gnome-session
 
 This will create a symlink to run the gnome shell on boot
 
