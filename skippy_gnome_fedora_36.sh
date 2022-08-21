@@ -14,7 +14,7 @@ echo "Install graphical enviroment"
 sudo dnf install @base-x gnome-shell
 
 echo "Install core applications"
-sudo dnf install gnome-software gnome-terminal nautilus brave-browser gnome-calculator geary gnome-calendar gnome-clocks rhythmbox gedit libreoffice gnome-system-monitor
+sudo dnf install gnome-software gnome-terminal nautilus brave-browser gnome-calculator geary gnome-calendar gnome-clocks rhythmbox gedit libreoffice gnome-system-monitor wget curl
 
 echo "Install user specific applications"
 flatpak install org.ardour.Ardour org.audacityteam.Audacity com.discordapp.Discord com.jgraph.drawio.desktop org.gnome.Extensions io.lbry.lbry-app obsproject.Studio org.pitivi.Pitivi org.signal.Signal com.spotify.Client org.x.Warpinator org.gimp.GIMP com.xnview.XnConvert io.mpv.Mpv
