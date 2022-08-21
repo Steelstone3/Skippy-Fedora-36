@@ -10,6 +10,7 @@ Run the live image from a bootable USB select a installation source and create a
 
 and the following sub-options
 > - Standard
+>
 > - (if on a vitrtual machine) Guest Additions
 
 upon first boot install git and nano with the following command
@@ -22,12 +23,15 @@ Before starting the install it is a good idea to configure dnf (the package mana
 Edit the following file configuration with the following:
 
 > sudo dnf install nano
+>
 > sudo nano /etc/dnf/dnf.conf
 
 Write the following at the bottom of the file
 
 > max_parallel_downloads=10
+>
 > fastestmirror=True
+>
 > deltarpm=1
 
 Save the file
@@ -39,9 +43,13 @@ Please refer to this guide to upgrade to Fedora 36 (server) before going any fur
 
 Typically run the following: 
 > sudo dnf upgrade --refresh
+>
 > sudo dnf autoremove
+>
 > sudo dnf install dnf-plugin-system-upgrade
+>
 > sudo dnf system-upgrade download --releasever=36
+>
 > sudo dnf system-upgrade reboot
 
 ## Running The Script For Skippy Gnome Fedora 36
@@ -50,8 +58,11 @@ Prior to running the script please feel free to comment out (#) the Microsoft re
 Boot up Fedora Server and run the following commands
 
 > sudo dnf install git
+>
 > git clone https://github.com/Steelstone3/Skippy-Fedora-36.git
+>
 > cd Skippy-Fedora-36
+>
 > bash skippy_gnome_fedora_36.sh
 
 The script will then install the applications for "Skippy Gnome Fedora 36"
@@ -95,6 +106,7 @@ Follow this guide with caution https://christitus.com/speedup-linux/
 Within /etc/default/grub change GRUB_CMDLINE_LINUX="rhgb quiet to:
 
 > sudo nano /etc/default/grub
+>
 > GRUB_CMDLINE_LINUX="rhgb quiet mitigations=off"
 
 Save the file
