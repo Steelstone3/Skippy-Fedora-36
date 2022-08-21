@@ -19,8 +19,8 @@ echo "Install user specific applications"
 flatpak install org.ardour.Ardour org.audacityteam.Audacity com.discordapp.Discord com.jgraph.drawio.desktop org.gnome.Extensions io.lbry.lbry-app obsproject.Studio org.pitivi.Pitivi org.signal.Signal com.spotify.Client org.x.Warpinator org.gimp.GIMP com.xnview.XnConvert io.mpv.Mpv
 
 echo "Install developer tools"
-flatpak install app/com.sublimemerge.App/x86_64/stable com.jetbrains.Rider com.jetbrains.IntelliJ-IDEA-Community app/com.jetbrains.IntelliJ-IDEA-Ultimate/x86_64/stable org.gnome.Glade com.github.liferooter.textpieces com.getpostman.Postman app/io.dbeaver.DBeaverCommunity/x86_64/stable
 sudo dnf install code dotnet java-latest-openjdk npm rust cargo
+flatpak install app/com.sublimemerge.App/x86_64/stable com.jetbrains.Rider com.jetbrains.IntelliJ-IDEA-Community app/com.jetbrains.IntelliJ-IDEA-Ultimate/x86_64/stable org.gnome.Glade com.github.liferooter.textpieces com.getpostman.Postman app/io.dbeaver.DBeaverCommunity/x86_64/stable
 
 echo "Enable services"
 sudo systemctl enable gdm.service NetworkManager
