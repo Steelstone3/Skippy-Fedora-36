@@ -1,6 +1,5 @@
 echo "Install system sofware"
 sudo dnf install gdm git vim htop pipewire
-#sudo dnf group install "Multimedia" "Standard"
 
 echo "Setup repositories"
 sudo dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.com/x86_64/
@@ -11,7 +10,7 @@ sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-releas
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 echo "Install graphical enviroment"
-sudo dnf install @base-x gnome-shell
+sudo dnf install @base-x @multimedia @standard gnome-shell
 
 echo "Install core applications"
 sudo dnf install gnome-software gnome-terminal nautilus brave-browser gnome-calculator geary gnome-calendar gnome-clocks rhythmbox gedit libreoffice gnome-system-monitor wget curl
