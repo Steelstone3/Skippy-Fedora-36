@@ -1,4 +1,4 @@
-# Skippy-Fedora-36
+# Skippy-Fedora
 
 ## Prerequisites
 Install The Latest Fedora Server Edition
