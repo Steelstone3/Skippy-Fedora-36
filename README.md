@@ -59,11 +59,13 @@ Boot up Fedora Server and run the following commands
 
 > sudo dnf install git
 >
-> git clone https://github.com/Steelstone3/Skippy-Fedora-36.git
+> git clone https://github.com/Steelstone3/Skippy-Fedora.git
 >
-> cd Skippy-Fedora-36
+> cd Skippy-Fedora
 >
-> bash skippy_gnome_fedora_36.sh
+> git checkout fedora-36-base
+>
+> bash skippy_fedora_36.sh
 
 The script will then install the applications for "Skippy Gnome Fedora 36"
 
