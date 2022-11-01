@@ -15,12 +15,8 @@ sudo dnf install @base-x @multimedia @standard gnome-shell
 echo "Install core applications"
 sudo dnf install gnome-software gnome-terminal nautilus brave-browser gnome-calculator geary gnome-calendar gnome-clocks rhythmbox gedit libreoffice gnome-system-monitor wget curl
 
-echo "Install user specific applications"
-flatpak install org.ardour.Ardour org.audacityteam.Audacity com.discordapp.Discord com.jgraph.drawio.desktop org.gnome.Extensions io.lbry.lbry-app obsproject.Studio org.pitivi.Pitivi org.signal.Signal com.spotify.Client org.x.Warpinator org.gimp.GIMP com.xnview.XnConvert io.mpv.Mpv
-
-echo "Install developer tools"
-sudo dnf install code dotnet java-latest-openjdk npm rust cargo
-flatpak install app/com.sublimemerge.App/x86_64/stable com.jetbrains.Rider com.jetbrains.IntelliJ-IDEA-Community app/com.jetbrains.IntelliJ-IDEA-Ultimate/x86_64/stable org.gnome.Glade com.github.liferooter.textpieces com.getpostman.Postman app/io.dbeaver.DBeaverCommunity/x86_64/stable
+cd ~
+git clone https://github.com/Steelstone3/Linux-Setup.git
 
 echo "Enable services"
 sudo systemctl enable gdm.service NetworkManager
