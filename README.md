@@ -52,7 +52,7 @@ Typically run the following:
 >
 > sudo dnf system-upgrade reboot
 
-## Running The Script For Skippy Gnome Fedora 36
+## Running The Script For Skippy Fedora 36
 Prior to running the script please feel free to comment out (#) the Microsoft repository being imported under setup repositories and change/ comment out (#) to personal preference for "Install user specific applications" and "Install developer tools" sections
 
 Boot up Fedora Server and run the following commands
@@ -67,9 +67,9 @@ Boot up Fedora Server and run the following commands
 >
 > bash skippy_fedora_36.sh
 
-The script will then install the applications for "Skippy Gnome Fedora 36"
+The script will then install the applications for "Skippy Fedora 36"
 
-## Configuration For Skippy Gnome Fedora 36
+## Configuration For Skippy Fedora 36
 Refer to this README.md for reference
 
 In order to get a working system the following files will need to be altered:
@@ -84,7 +84,7 @@ Then add the following line to run the graphical shell
 
 > nano ~/.xinitrc
 >
-> exec /usr/bin/gnome-session
+> exec gnome-session
 
 This will create a symlink to run the gnome shell on boot
 
