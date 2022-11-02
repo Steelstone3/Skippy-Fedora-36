@@ -1,5 +1,7 @@
 echo "Install system sofware"
 sudo dnf install gdm git vim htop pipewire
+git config --global pull.rebase true
+git config --global rebase.autoStash true
 
 echo "Setup repositories"
 sudo dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.com/x86_64/
