@@ -1,14 +1,17 @@
 # Skippy-Fedora-36
 
 ## Prerequisites
-Install Fedora 36 Server 
 
-> https://getfedora.org/en/server/download/
+Install Fedora 36 Server
+
+> <https://getfedora.org/en/server/download/>
 
 Run the live image from a bootable USB select a installation source and create a wheelhouse user then select the following options in "Software Selection":
+>
 > - Fedora Custom Operating System
 
 and the following sub-options
+>
 > - Standard
 >
 > - (if on a vitrtual machine) Guest Additions
@@ -38,10 +41,10 @@ Save the file
 
 ### Upgrading To Fedora 36 Server From An Older Version
 
-Please refer to this guide to upgrade to Fedora 36 (server) before going any further in this guide 
-> https://docs.fedoraproject.org/en-US/quick-docs/dnf-system-upgrade/#sect-performing-system-upgrade
+Please refer to this guide to upgrade to Fedora 36 (server) before going any further in this guide
+> <https://docs.fedoraproject.org/en-US/quick-docs/dnf-system-upgrade/#sect-performing-system-upgrade>
 
-Typically run the following: 
+Typically run the following:
 > sudo dnf upgrade --refresh
 >
 > sudo dnf autoremove
@@ -53,13 +56,14 @@ Typically run the following:
 > sudo dnf system-upgrade reboot
 
 ## Running The Script For Skippy Fedora 36
+
 Prior to running the script please feel free to comment out (#) the Microsoft repository being imported under setup repositories and change/ comment out (#) to personal preference for "Install user specific applications" and "Install developer tools" sections
 
 Boot up Fedora Server and run the following commands
 
 > sudo dnf install git
 >
-> git clone https://github.com/Steelstone3/Skippy-Fedora.git
+> git clone <https://github.com/Steelstone3/Skippy-Fedora.git>
 >
 > cd Skippy-Fedora
 >
@@ -70,6 +74,7 @@ Boot up Fedora Server and run the following commands
 The script will then install the applications for "Skippy Fedora 36"
 
 ## Configuration For Skippy Fedora 36
+
 Refer to this README.md for reference
 
 In order to get a working system the following files will need to be altered:
@@ -91,6 +96,7 @@ This will create a symlink to run the gnome shell on boot
 ### Optimisations
 
 #### Wayland
+
 There are some optimisations that can be made.
 
 Wayland on Gnome works in cases of Intel or AMD graphics and can be enabled with the following:
@@ -105,7 +111,7 @@ Save the file
 
 #### Mitigations Performance Boost
 
-Follow this guide with caution https://christitus.com/speedup-linux/
+Follow this guide with caution <https://christitus.com/speedup-linux/>
 
 Within /etc/default/grub change GRUB_CMDLINE_LINUX="rhgb quiet to:
 
