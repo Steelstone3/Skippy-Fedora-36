@@ -59,6 +59,10 @@ Typically run the following:
 
 Prior to running the script please feel free to comment out (#) the Microsoft repository being imported under setup repositories and change/ comment out (#) to personal preference for "Install user specific applications" and "Install developer tools" sections
 
+Additionally to run this on a virtual machine run
+
+> bash 0_install_virtual_machine.sh
+
 Boot up Fedora Server and run the following commands
 
 > sudo dnf install git
