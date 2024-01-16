@@ -1,11 +1,13 @@
 echo "Install system packages"
 
 sudo dnf install -y dnf5
-sudo dnf5 install -y helix
 sudo dnf5 install -y alacritty
+sudo dnf5 install -y helix
 sudo dnf5 install -y htop 
 sudo dnf5 install -y curl
 sudo dnf5 install -y pipewire
+
+sudo dnf5 install -y gnome-terminal
 
 sudo dnf5 install -y git
 git config --global push.autoSetupRemote true
