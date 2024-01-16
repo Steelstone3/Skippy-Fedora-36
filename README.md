@@ -69,7 +69,10 @@ Boot up Fedora Server and run the following commands
 >
 > git checkout fedora-39-base
 >
-> bash skippy_fedora_39.sh
+> bash 1_repository_setup.sh
+>
+> bash 2_install_core_software.sh
+>
 
 The script will then install the applications for "Skippy Fedora 39"
 
