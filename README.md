@@ -95,6 +95,8 @@ In order to get a working system the following files will need to be altered:
 
 ### Setup xinitrc
 
+Covered in 6_setup_xinitrc.sh
+
 Create a file called .xinitrc in the home folder
 
 > touch ~/.xinitrc
