@@ -2,24 +2,27 @@
 
 ## Prerequisites
 
-Install Fedora 39 Server
+### Install Fedora 39 Server
 
 > <https://getfedora.org/en/server/download/>
 
 Run the live image from a bootable USB select a installation source and create a wheelhouse user then select the following options in "Software Selection":
->
+
 > - Fedora Custom Operating System
 
 and the following sub-options
->
+
 > - Standard
 >
 > - (if on a vitrtual machine) Guest Additions
 
-upon first boot install git and nano with the following command
-> sudo dnf install git nano
+### First Boot
 
-### Optimising DNF
+Upon first boot install git, dnf5 and helix with the following command
+
+> sudo dnf install git helix dnf5
+
+#### Optimising DNF
 
 Before starting the install it is a good idea to configure dnf (the package manager of Fedora) to speed up the process
 
@@ -38,6 +41,12 @@ Write the following at the bottom of the file
 > deltarpm=1
 
 Save the file
+
+### Clone The Repository
+
+> git clone <https://github.com/Steelstone3/Skippy-Fedora.git>
+>
+> git checkout fedora-39-base
 
 ### Upgrading To Fedora 39 Server From An Older Version
 
