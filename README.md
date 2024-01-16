@@ -1,8 +1,8 @@
-# Skippy-Fedora-36
+# Skippy-Fedora-39
 
 ## Prerequisites
 
-Install Fedora 36 Server
+Install Fedora 39 Server
 
 > <https://getfedora.org/en/server/download/>
 
@@ -39,9 +39,9 @@ Write the following at the bottom of the file
 
 Save the file
 
-### Upgrading To Fedora 36 Server From An Older Version
+### Upgrading To Fedora 39 Server From An Older Version
 
-Please refer to this guide to upgrade to Fedora 36 (server) before going any further in this guide
+Please refer to this guide to upgrade to Fedora 39 (server) before going any further in this guide
 > <https://docs.fedoraproject.org/en-US/quick-docs/dnf-system-upgrade/#sect-performing-system-upgrade>
 
 Typically run the following:
@@ -51,11 +51,11 @@ Typically run the following:
 >
 > sudo dnf install dnf-plugin-system-upgrade
 >
-> sudo dnf system-upgrade download --releasever=36
+> sudo dnf system-upgrade download --releasever=39
 >
 > sudo dnf system-upgrade reboot
 
-## Running The Script For Skippy Fedora 36
+## Running The Script For Skippy Fedora 39
 
 Prior to running the script please feel free to comment out (#) the Microsoft repository being imported under setup repositories and change/ comment out (#) to personal preference for "Install user specific applications" and "Install developer tools" sections
 
@@ -67,13 +67,13 @@ Boot up Fedora Server and run the following commands
 >
 > cd Skippy-Fedora
 >
-> git checkout fedora-36-base
+> git checkout fedora-39-base
 >
-> bash skippy_fedora_36.sh
+> bash skippy_fedora_39.sh
 
-The script will then install the applications for "Skippy Fedora 36"
+The script will then install the applications for "Skippy Fedora 39"
 
-## Configuration For Skippy Fedora 36
+## Configuration For Skippy Fedora 39
 
 Refer to this README.md for reference
 
