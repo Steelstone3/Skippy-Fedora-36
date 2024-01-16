@@ -16,7 +16,7 @@ sudo dnf5 install gnome-boxes
 # Create a partition
 
 # lsblk
-# fdisk /dev/vda
+# sudo fdisk /dev/vda
 # n
 # p
 # partition number: default

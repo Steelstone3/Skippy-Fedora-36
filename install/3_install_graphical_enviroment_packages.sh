@@ -8,6 +8,8 @@ echo "Gnome shell as a test"
 sudo dnf5 install -y gdm
 
 sudo dnf5 install -y gdm
-sudo dnf5 install -y leftwm
+
 # sudo dnf5 install -y @gnome-desktop
 # sudo dnf5 install -y gnome-shell
+
+sudo dnf5 install -y leftwm
