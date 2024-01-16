@@ -69,10 +69,17 @@ Boot up Fedora Server and run the following commands
 >
 > git checkout fedora-39-base
 >
-> bash 1_repository_setup.sh
+> bash 1_install_system_packages.sh
 >
-> bash 2_install_core_software.sh
+> bash 2_setup_repositories.sh
 >
+> bash 3_install_graphical_enviroment_packages.sh
+>
+> bash 4_install_user_packages.sh
+>
+> bash 5_setup_services.sh
+>
+> bash 6_setup_xinitrc.sh
 
 The script will then install the applications for "Skippy Fedora 39"
 
