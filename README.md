@@ -69,11 +69,11 @@ Boot up Fedora Server and run the following commands
 >
 > git checkout fedora-39-base
 >
-> bash 2 <tab>
+> bash 2 tab
 >
 > etc...
-> 
-> bash 7 <tab>
+>
+> bash 7 tab
 
 The script will then install the applications for "Skippy Fedora 39"
 
