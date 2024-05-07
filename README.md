@@ -12,7 +12,7 @@ Run the live image from a bootable USB select a installation source and create a
 
 and the following sub-options
 
-> - Standard
+> - Minimal
 >
 > - (if on a vitrtual machine) Guest Additions
 
@@ -37,8 +37,6 @@ Write the following at the bottom of the file
 > max_parallel_downloads=10
 >
 > fastestmirror=True
->
-> deltarpm=1
 
 Save the file
 
@@ -52,17 +50,6 @@ Save the file
 
 Please refer to this guide to upgrade to Fedora 39 (server) before going any further in this guide
 > <https://docs.fedoraproject.org/en-US/quick-docs/dnf-system-upgrade/#sect-performing-system-upgrade>
-
-Typically run the following:
-> sudo dnf upgrade --refresh
->
-> sudo dnf autoremove
->
-> sudo dnf install dnf-plugin-system-upgrade
->
-> sudo dnf system-upgrade download --releasever=39
->
-> sudo dnf system-upgrade reboot
 
 ## Running The Script For Skippy Fedora 39
 
@@ -82,17 +69,11 @@ Boot up Fedora Server and run the following commands
 >
 > git checkout fedora-39-base
 >
-> bash 1_install_system_packages.sh
+> bash 2 <tab>
 >
-> bash 2_setup_repositories.sh
->
-> bash 3_install_graphical_enviroment_packages.sh
->
-> bash 4_install_user_packages.sh
->
-> bash 5_setup_services.sh
->
-> bash 6_setup_xinitrc.sh
+> etc...
+> 
+> bash 7 <tab>
 
 The script will then install the applications for "Skippy Fedora 39"
 
@@ -114,25 +95,11 @@ Then add the following line to run the graphical shell
 
 > nano ~/.xinitrc
 >
-> exec gnome-session
+> exec cinnamon-session
 
 This will create a symlink to run the gnome shell on boot
 
 ### Optimisations
-
-#### Wayland
-
-There are some optimisations that can be made.
-
-Wayland on Gnome works in cases of Intel or AMD graphics and can be enabled with the following:
-
-> sudo nano /etc/gdm/custom.conf
-
-Find this line "#WaylandEnable=false" under [daemon] within the file and change it to:
-
-> WaylandEnable=true
-
-Save the file
 
 #### Mitigations Performance Boost
 
