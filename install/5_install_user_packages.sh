@@ -4,9 +4,10 @@ sudo dnf5 install nemo
 sudo dnf5 install geary
 sudo dnf5 install rhythmbox
 sudo dnf5 install libreoffice
+sudo dnf5 install firefox
 
-flatpak install com.brave.Browser
-flatpak install com.vysp3r.ProtonPlus
+# flatpak install com.brave.Browser
+# flatpak install com.vysp3r.ProtonPlus
 
 # sudo dnf5 install thunderbird
 # sudo dnf5 install gnome-software 

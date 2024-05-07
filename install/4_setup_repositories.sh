@@ -8,5 +8,5 @@ echo "Setup repositories"
 
 sudo dnf5 install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
-sudo dnf5 install -y flatpak
-flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+# sudo dnf5 install -y flatpak
+# flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
