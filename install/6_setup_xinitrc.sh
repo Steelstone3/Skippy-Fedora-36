@@ -1,3 +1,3 @@
 touch ~/.xinitrc
 
-echo "exec gnome-session" > ~/.xinitrc
+echo "exec cinnamon-session" > ~/.xinitrc
