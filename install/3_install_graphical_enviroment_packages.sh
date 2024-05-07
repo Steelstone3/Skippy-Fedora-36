@@ -15,4 +15,4 @@ sudo dnf5 install -y @hardware-support
 sudo dnf5 install -y lightdm
 sudo dnf5 install -y cinnamon
 
-sudo dnf5 group list --hidden | more
+sudo dnf5 group list --hidden | less
