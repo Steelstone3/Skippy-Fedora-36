@@ -4,7 +4,7 @@ sudo dnf install -y dnf5
 sudo dnf5 remove -y dnf
 sudo dnf5 install -y alacritty
 sudo dnf5 install -y helix
-sudo dnf5 install -y htop 
+sudo dnf5 install -y htop
 sudo dnf5 install -y curl
 sudo dnf5 install -y pipewire
 
