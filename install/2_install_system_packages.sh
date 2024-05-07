@@ -7,7 +7,6 @@ sudo dnf5 install -y helix
 sudo dnf5 install -y htop 
 sudo dnf5 install -y curl
 sudo dnf5 install -y pipewire
-sudo dnf5 install -y nemo
 
 sudo dnf5 install -y git
 git config --global push.autoSetupRemote true
