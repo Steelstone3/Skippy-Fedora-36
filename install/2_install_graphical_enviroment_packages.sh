@@ -5,8 +5,8 @@ sudo dnf5 install -y @base-x
 sudo dnf5 install -y @multimedia
 sudo dnf5 install -y @standard
 sudo dnf5 install -y @hardware-support
+sudo dnf5 install -y @networkmanager-submodules
 # sudo dnf5 install -y @core
-# sudo dnf5 install -y @networkmanager-submodules
 # sudo dnf5 install -y @container-management
 # sudo dnf5 install -y @anaconda-tools
 # sudo dnf5 install -y @printing
