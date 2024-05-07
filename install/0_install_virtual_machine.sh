@@ -3,6 +3,8 @@ sudo dnf5 install libvirt -y
 sudo dnf5 install virt-install -y
 sudo dnf5 install gnome-boxes
 
+# flatpak install boxes
+
 # Resizing guide
 # qemu-img info Fedora-Server-KVM-39-1.5.x86_64.qcow2
 # qemu-img resize disk.qcow2 100G
