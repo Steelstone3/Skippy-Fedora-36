@@ -1,6 +1,6 @@
 echo "Install user packages"
 
-# sudo dnf5 install nemo
+sudo dnf5 install nemo
 sudo dnf5 install thunderbird
 sudo dnf5 install rhythmbox
 sudo dnf5 install libreoffice
