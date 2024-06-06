@@ -14,8 +14,8 @@ sudo dnf5 install -y @base-graphical
 # sudo dnf5 install -y @fonts
 
 sudo dnf5 install -y lightdm
-sudo dnf5 install -y cinnamon
-# sudo dnf5 copr enable ryanabx/cosmic-epoch
-# sudo dnf5 install -y cosmic-desktop
+# sudo dnf5 install -y cinnamon
+sudo dnf5 copr enable ryanabx/cosmic-epoch
+sudo dnf5 install -y cosmic-desktop
 
 sudo dnf5 group list --hidden | less
