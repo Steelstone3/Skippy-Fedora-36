@@ -1,0 +1,1 @@
+sudo dnf5 group list --hidden | less
