@@ -1,7 +1,10 @@
 sudo dnf5 install -y @virtualization
 sudo dnf5 install libvirt -y
 sudo dnf5 install virt-install -y
-sudo dnf5 install gnome-boxes
+# sudo dnf5 install gnome-boxes
+
+sudo systemctl start libvirtd
+sudo systemctl enable libvirtd
 
 # flatpak install boxes
 
